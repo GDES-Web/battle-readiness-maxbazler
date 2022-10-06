@@ -1,1 +1,50 @@
+body {
+    background-color: #F2F2F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #5A5A5A;
+}
 
+.container {
+    max-width: 1280px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C0C0C0;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.logo {
+    height: 7vh;
+}
+
+.header {
+    height: 7vh;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.sidebar {
+    margin-right: 1rem;
+    flex: 2;
+}
+
+.main {
+    flex: 5;
+}
