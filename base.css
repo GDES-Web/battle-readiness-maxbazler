@@ -8,6 +8,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: #5A5A5A;
+    text-align: center;
 }
 
 .container {
@@ -19,6 +20,8 @@ body {
     padding: 2rem;
     align-items: center;
     position: relative;
+    /* max-width: 100%; */
+    overflow: hidden;
 }
 
 .child {
@@ -36,32 +39,22 @@ body {
     justify-content: space-between;
 }
 
-.main-content {
-    display: flex;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex: 3;
     gap: 1rem;
     width: 100%;
-    flex: 1;
+    margin-bottom: 1rem;
 }
 
-.side {
-    flex: 1;
-    background-color: transparent;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: left;
+.grid-child {
+    background-color: #C0C0C0;
 }
 
-.main-wrapper {
+.flex {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex: 4;
-}
-
-.header {
-    flex: 2;
-}
-
-.main {
-    flex: 6;
+    width: 100%;
+    gap: 1rem;
+    flex: 1;
 }
