@@ -1,3 +1,8 @@
+* {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F2F2F2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,23 +26,29 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #C0C0C0;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.logo {
-    height: 7vh;
+.top-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header {
     height: 7vh;
 }
 
+.intro {
+    height: 7vh;
+}
+
 .flex {
     display: flex;
     width: 100%;
-    height: 50vh;
+    flex: 1;
+    gap: 1rem;
 }
 
 .sidebar {
