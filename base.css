@@ -36,26 +36,32 @@ body {
     justify-content: space-between;
 }
 
-.header {
-    height: 7vh;
-}
-
-.intro {
-    height: 7vh;
-}
-
-.flex {
+.main-content {
     display: flex;
+    gap: 1rem;
     width: 100%;
     flex: 1;
-    gap: 1rem;
 }
 
-.sidebar {
-    margin-right: 1rem;
+.side {
+    flex: 1;
+    background-color: transparent;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 4;
+}
+
+.header {
     flex: 2;
 }
 
 .main {
-    flex: 5;
+    flex: 6;
 }
